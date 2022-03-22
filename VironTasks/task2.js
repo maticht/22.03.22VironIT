@@ -1,8 +1,8 @@
 function firstLetter(str){
-    let newArr = str.split(' ').map(str => str[0]);
-    newArr.filter(function (){
-        return str.length > 0;
-    })
-    console.log(newArr)
+    let newArr = str.split(' ');
+    let arr = [];
+    newArr.filter((item,i) => arr[i] = item[0])
+    console.log(arr)
+
 }
-firstLetter("Каждый охотник желает знать, где сидит фазан.")
+firstLetter('Каждый охотник желает знать, где сидит фазан.')
